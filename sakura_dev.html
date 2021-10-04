@@ -23,7 +23,6 @@
 
 	 <style>
 		body{<!--BackgroundStart-->background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-image:url("<!--BackgroundUrl-->");<!--BackgroundEnd-->}
-		button{  -webkit-app-region: no-drag; }
         .mdui-appbar .mdui-toolbar{
 			height:64px;
 			font-size: 15px;
@@ -157,9 +156,9 @@
     }
     </style>
 </head>
-<body class=" mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink" style="-webkit-app-region: drag">
-	<header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset">	
-        <div class="mdui-toolbar mdui-color-theme">
+<body class=" mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink" style="overflow:-Scroll;overflow-y:hidden">
+	<header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset" style="-webkit-app-region: drag">	
+        <div class="mdui-toolbar mdui-color-theme" style="-webkit-app-region: drag">
             <span class="mdui-btn  mdui-typo-headline mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" mdui-tooltip="{content: '菜单'}"><i class="mdui-icon material-icons">menu</i></span>
             <a href="<!--base_path-->" class="mdui-typo-headline"><!--Sitename--></a>
 <!--PathArrayStart-->
